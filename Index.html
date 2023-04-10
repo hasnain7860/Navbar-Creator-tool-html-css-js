@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <div class="navbar-color">
+                <span>nav bar color</span>
+                <input type="color" id="navcolor" onchange="change()" name="favcolor" value="#12d62f">
+            </div>
+            <div class="navbar-text-color">
+                  <span>nav bar text color</span>
+                <input type="color" id="textcolor" onchange="change()" name="favcolor" value="#ffffff">
+            </div>
+            <div class="text-hover-backgroud-color">
+                  <span>background hover color</span>
+                <input type="color" id="hovercolor" onchange="change()" name="favcolor" value="#ffffff">
+            </div>
+            <div class="text-hover-color">
+                  <span>Text hover color</span>
+                <input type="color" id="texthovercolor" onchange="change()"  name="favcolor" value="#12d62f">
+            </div>
+           
+    </header>
+    <section>
+          <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Hassnain Tariq</label>
+      <ul >
+        <li><a class=" link" onmouseover="over(this)" onmouseout="out(this)" href="index.html">Home</a></li>
+        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="feechart.html">Free Chart</a></li>
+        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="#divOne">Contact</a></li>
+        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="about.html">About</a></li>
+      </ul>
+    </nav>
+    </section>
+    
+    <script src="index.js"></script>
+    <script>
+        javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda";document.body.appendChild(script); script.onload = function () { eruda.init() } })();
+    </script>
+</body>
+</html>
