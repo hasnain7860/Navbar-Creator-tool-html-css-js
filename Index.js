@@ -31,6 +31,7 @@ const textHoverColor  = document.getElementById("texthovercolor");
     
  em.style.backgroundColor = hoverColor.value ; 
  em.style.color = textHoverColor.value ;
+ 
    
 }
 function  out(em) {
