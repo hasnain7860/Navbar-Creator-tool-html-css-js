@@ -5,9 +5,14 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 body{
   font-family: montserrat;
   
+}
+.hide {
+    display: none;
+    
 }
 header div {
     width: 100vw;
