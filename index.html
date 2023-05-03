@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Page title</title>
+    <link rel="stylesheet" href="prism.css">
+
     <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-</head>
+      </head>
 <body>
     <header>
+        <button class="toggbutton" onclick="showd()">show</button>
         <div>
             <div class="navbar-color">
-                <span>nav bar color</span>
-                <input type="color" id="navcolor" onchange="change()" name="favcolor" value="#12d62f">
+                <span>Nav Bar Background color</span>
+                <input type="color" id="navcolor"  name="favcolor" value="#12d62f">
             </div>
             <div class="navbar-text-color">
                   <span>nav bar text color</span>
-                <input type="color" id="textcolor" onchange="change()" name="favcolor" value="#ffffff">
+                <input type="color" id="textcolor" name="favcolor" value="#ffffff">
             </div>
-            <div class="text-hover-backgroud-color">
-                  <span>background hover color</span>
-                <input type="color" id="hovercolor" onchange="change()" name="favcolor" value="#ffffff">
-            </div>
-            <div class="text-hover-color">
-                  <span>Text hover color</span>
-                <input type="color" id="texthovercolor" onchange="change()"  name="favcolor" value="#12d62f">
-            </div>
+           <input type="button" id="submit" class="getval" value="submit">
+           
            
     </header>
-    <section>
+    <section >
           <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -35,17 +32,26 @@
       </label>
       <label class="logo">Hassnain Tariq</label>
       <ul >
-        <li><a class=" link" onmouseover="over(this)" onmouseout="out(this)" href="index.html">Home</a></li>
-        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="feechart.html">Free Chart</a></li>
-        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="#divOne">Contact</a></li>
-        <li><a class="link" onmouseover="over(this)" onmouseout="out(this)" href="about.html">About</a></li>
+        <li><a class=" link" href="#">Home</a></li>
+        <li><a class="link"  href="#">Free Chart</a></li>
+        <li><a class="link"  href="#">Contact</a></li>
+        <li><a class="link" href="#">About</a></li>
       </ul>
     </nav>
     </section>
+    
+  
+    <pre class="hide"><code class="language-html "  id="html"></code></pre>
+    <pre class="hide" ><code class="language-css " id="css"></code></pre>
+    </div>
+    
     
     <script src="index.js"></script>
     <script>
         javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda";document.body.appendChild(script); script.onload = function () { eruda.init() } })();
     </script>
+    <script src="prism.js"></script>
 </body>
 </html>
+
+
